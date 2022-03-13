@@ -1,29 +1,35 @@
-body {
-  background-color: #A8D973;
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
 
 * {
   padding: 0;
-  margin: 0;
+  margin: auto;
   text-decoration: none;
   list-style: none;
   box-sizing:border-box;
 }
 
+body {
+  background-color: #A8D973;
+  text-align: center;
+  padding-top: 150px;
+}
+
 .navbar {
   background: #A8D973;
-  height: 60px;
+  height: 120px;
    width: 100%;
   position: fixed;
-  text-align: left;
   top: 0;
+  /* box-shadow: 1px 20px #94BF65; */
 }
 
 .nav-menu{
-  color: black;
+  color: #A8D973;
   font-size: 50px;
-  line-height: 60px;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+  padding-left: 400px;
 }
 
 
@@ -36,35 +42,53 @@ body {
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
+  padding-top: 65px;
 } 
 
 nav ul li a{
   color: black;
   font-size: 30px;
+  text-transform: uppercase;
+  margin: 0 10px;
+  font-family: 'Lato', sans-serif;
 }
 
-.nav-button {
-  background-color: #A8D973;
-  border: 0px;
-  border-radius: 25px;
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
 }
 
-.nav-button:hover {
-  animation-name: hovering;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-
+nav ul li a:hover {
+  color: #94BF65;
 }
 
-@keyframes hovering{
-  90% {
-    background-color: #04D1C3;
-  }
-  100% {
-    background-color: #04D1C3;
-  }
+nav.navbar ul li a{
+  position: relative;
+}
+nav.navbar ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #94BF65;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
 }
 
+.about {
+  border: 5px groove #94BF65;
+  background-color: #94BF65;
+  height: 500px;
+}
+
+/*
 .dot{
   background-color:
 #668D3C 
@@ -81,3 +105,4 @@ nav ul li a{
 ;
 
 }
+*/
