@@ -29,7 +29,7 @@ body {
   line-height: 80px;
   display: flex;
   justify-content: center;
-  padding-left: 400px;
+  padding-left: 300px;
 }
 
 
@@ -60,7 +60,7 @@ nav ul li a:before {
 }
 
 nav ul li a:hover {
-  color: #94BF65;
+  color: #8C8C8C;
 }
 
 nav.navbar ul li a{
@@ -75,7 +75,7 @@ nav.navbar ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #94BF65;
+  background: black;
   height: 1px;
 }
 nav.navbar ul li a:hover:after {
@@ -88,21 +88,3 @@ nav.navbar ul li a:hover:after {
   height: 500px;
 }
 
-/*
-.dot{
-  background-color:
-#668D3C 
-#855723									
-#613318
-#FA833E							
-#2D6122
-#AD663D
-#A8D973
-#D57500
-#BDD09F
-
-#ED7D3B
-;
-
-}
-*/
