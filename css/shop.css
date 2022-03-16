@@ -20,6 +20,7 @@
      width: 100%;
     position: fixed;
     top: 0;
+    z-index: 1;
     /* box-shadow: 1px 20px #94BF65; */
   }
   
@@ -86,8 +87,8 @@
   
   #slider {
     position: relative;
-    width: 500px;
-    height: 265px;
+    width: 800px;
+    height: 565px;
     overflow: hidden;
     box-shadow: 0 0 30px rgba(0,0,0,0.3);
   }
@@ -110,8 +111,8 @@
   }
   
   #slider ul li img {
-    width: 500px;
-    height: 265px;
+    width: 800px;
+    height: 565px;
   }
   
   #slider #prev, #slider #next {
@@ -131,14 +132,29 @@
 
   /* next buttons style */
   #slider #prev {
-    left: 10px;
+    left: 50px;
   }
 
   #slider #next {
-    right: 10px;
+    right: 50px;
   }
 
   #slider #prev:hover, #slider #next:hover {
     background-color: rgba(0,0,0,0.5);
     text-shadow: 0;
   }
+
+  /* Shopping list */
+
+  #itemList {
+   padding: 100px;
+  }
+
+  .item {
+  background-color: #94BF65;
+  height: 100px;
+  margin: 0px;
+  border: 1px solid black;
+  }
+
+  /* idk how this even works */
