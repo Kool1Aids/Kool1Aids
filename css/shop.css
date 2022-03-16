@@ -154,7 +154,21 @@
   background-color: #94BF65;
   height: 100px;
   margin: 0px;
+  position: relative;
   border: 1px solid black;
+  text-align: left;
+  font-size: larger;
   }
 
   /* idk how this even works */
+
+ .dropdownButton {
+   background-color: #94BF65;
+   border: none;
+   right: 10px;
+   top: 5px;
+   height: 90px;
+   font-size: 70px;
+   width: 100px;
+   position: absolute;
+ }
